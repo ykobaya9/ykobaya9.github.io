@@ -55,6 +55,10 @@
     border-bottom: 1px solid $border-color;
   }
 
+  > h2:first-child {
+    margin-top: 0;
+  }
+
   p, li, dl {
     font-size: 1em;
   }
