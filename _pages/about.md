@@ -24,9 +24,9 @@ I am interested in developing methods to enhance AI reliability and robustness i
 {% endunless %}
 <div class="list__item">
 <article class="archive__item">
-<p><strong>{{ post.title }}</strong><br />
+<p>{% if post.paperurl %}<a href="{{ post.paperurl }}"><strong>{{ post.title }}</strong></a>{% else %}<strong>{{ post.title }}</strong>{% endif %}<br />
 {{ post.authors | replace: site.author.name, author_bold }}<br />
-{% if post.venue %}<i>{{ post.venue }}</i>{% elsif post.status %}<i>{{ post.status }}</i>{% endif %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Paper</a>{% endif %}</p>
+{% if post.venue %}<i>{{ post.venue }}</i>{% elsif post.status %}<i>{{ post.status }}</i>{% endif %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
 <p class="archive__item-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 </article>
 </div>
