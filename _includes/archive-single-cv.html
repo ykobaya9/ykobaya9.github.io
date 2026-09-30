@@ -37,6 +37,7 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.citation %}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
+    {% elsif post.venue %}<p class="archive__item-excerpt" itemprop="description"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% elsif post.status %}<p class="archive__item-excerpt" itemprop="description"><i>{{ post.status }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>{% endif %}
     </li>
  </article>
