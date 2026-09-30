@@ -47,6 +47,10 @@ $type-size-8                : 0.625em;  // ~10px
    top of the body and offset the fixed sidebar below itself. */
 $masthead-height            : 0px;
 
+/* Breathing room above the content and the fixed sidebar, which the masthead
+   used to provide. */
+$page-top-space             : 2rem;
+
 /* Sidebar properties */
 $sidebar-screen-min-width   : 1024px;
 $sidebar-link-max-width     : 250px;
