@@ -43,7 +43,9 @@ $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
 /* masthead properties */
-$masthead-height            : 70px;
+/* 0 because the masthead is not rendered; it reserved this much space at the
+   top of the body and offset the fixed sidebar below itself. */
+$masthead-height            : 0px;
 
 /* Sidebar properties */
 $sidebar-screen-min-width   : 1024px;
