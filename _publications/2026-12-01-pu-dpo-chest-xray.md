@@ -7,7 +7,6 @@ excerpt: 'Retrospective radiology reports omit findings, and models trained on t
 date: 2026-12-01
 venue: 'Advances in Neural Information Processing Systems (NeurIPS)'
 paperurl: 'https://arxiv.org/abs/2608.05341'
-citation: 'Yuta Kobayashi, Pradyun Ramesh, Muhammad Ahmed Chaudhry, Vincent Jeanselme, Judy Wawira Gichoya, Sanmi Koyejo, Kathleen Capaccione, and Shalmali Joshi. (2026). &quot;Positive-Unlabeled Preference Optimization For Chest X-ray Report Generation.&quot; <i>Advances in Neural Information Processing Systems (NeurIPS)</i>.'
 ---
 
 Vision-language models for radiology report generation are trained on retrospective clinical reports, which suffer from *omission noise*: a finding may be genuinely present in the image yet go unmentioned in the report. Models trained with standard objectives inherit these omissions and learn to under-report findings themselves.

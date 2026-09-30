@@ -7,7 +7,6 @@ excerpt: 'We propose ORA, a marked time-to-event pre-training objective that joi
 date: 2026-12-01
 venue: 'Advances in Neural Information Processing Systems (NeurIPS)'
 paperurl: 'https://arxiv.org/abs/2602.00541'
-citation: 'Zilin Jing, Vincent Jeanselme, Yuta Kobayashi, Simon A. Lee, Chao Pang, Aparajita Kashyap, Yanwei Li, Xinzhuo Jiang, and Shalmali Joshi. (2026). &quot;One Loss to Rule Them All: Marked Time-to-Event for Structured EHR Foundation Models.&quot; <i>Advances in Neural Information Processing Systems (NeurIPS)</i>.'
 ---
 
 Clinical events recorded in electronic health records (EHR) are irregularly sampled and mix discrete events with numerical measurements such as laboratory values or treatment dosages. The sequential form of EHR has led prior EHR foundation models to borrow next-token prediction from language modeling, but that objective fails to capture the full structure of the data: it ignores the timing between events and discards the continuous measurements attached to them.

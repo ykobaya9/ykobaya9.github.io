@@ -7,7 +7,6 @@ excerpt: 'We introduce Learning-to-Measure (L2M), a meta-learning framework that
 date: 2026-07-01
 venue: 'International Conference on Machine Learning (ICML)'
 paperurl: 'https://arxiv.org/abs/2510.12624'
-citation: 'Yuta Kobayashi, Zilin Jing, Jiayu Yao, Hongseok Namkoong, and Shalmali Joshi. (2026). &quot;Learning-To-Measure: In-context Active Feature Acquisition.&quot; <i>International Conference on Machine Learning (ICML)</i>.'
 ---
 
 Active feature acquisition (AFA) is a sequential decision-making problem: which feature should we measure next in order to most improve a prediction for this particular instance? In practice, AFA methods must learn from retrospective data that carries systematic missingness in the features and offers only limited task-specific labels.
