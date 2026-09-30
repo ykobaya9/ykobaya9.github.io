@@ -305,6 +305,14 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
+# GitHub Pages injects jekyll-titles-from-headings by default. It gives any page
+# without a front matter title one taken from its first heading, and leaves that
+# heading in the content, so "## About" rendered both as the page title h1 and as
+# the heading itself. This does not happen in a plain local `jekyll build`, only
+# on Pages. Turning it off keeps the single underlined h2 the page defines.
+titles_from_headings:
+  enabled: false
+
 # Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
