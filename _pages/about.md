@@ -11,7 +11,7 @@ I am a second-year doctoral student advised by [Dr. Shalmali Joshi](https://shal
 
 ## Selected Works
 
-{% include base_path %}
+{% capture author_bold %}<strong>{{ site.author.name }}</strong>{% endcapture %}
 {% for category in site.publication_category %}
 {% assign title_shown = false %}
 {% for post in site.publications reversed %}
@@ -20,6 +20,13 @@ I am a second-year doctoral student advised by [Dr. Shalmali Joshi](https://shal
 <h3>{{ category[1].title }}</h3>
 {% assign title_shown = true %}
 {% endunless %}
-{% include archive-single.html title_tag="h4" %}
+<div class="list__item">
+<article class="archive__item">
+<p><strong>{{ post.title }}</strong><br />
+{{ post.authors | replace: site.author.name, author_bold }}<br />
+{% if post.venue %}<i>{{ post.venue }}</i>{% elsif post.status %}<i>{{ post.status }}</i>{% endif %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Paper</a>{% endif %}</p>
+<p class="archive__item-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+</article>
+</div>
 {% endfor %}
 {% endfor %}
