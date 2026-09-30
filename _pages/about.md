@@ -1,6 +1,8 @@
 ---
 permalink: /
-title: "About"
+title: "Yuta Kobayashi"
+seo_title: "Yuta Kobayashi | Columbia University"
+description: "Yuta Kobayashi is a doctoral student in biomedical informatics at Columbia University, advised by Dr. Shalmali Joshi. His research covers AI reliability and robustness in data-scarce settings, uncertainty, missing data, and cost-efficient data acquisition."
 author_profile: true
 redirect_from: 
   - /about/

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yuta Kobayashi"
 title_separator          : "-"
 name                     : &name "Yuta Kobayashi"
-description              : &description "Ph.D. Student at Columbia University"
+description              : &description "Yuta Kobayashi is a doctoral student in biomedical informatics at Columbia University, working on AI reliability and robustness in data-scarce settings, uncertainty, missing data, and cost-efficient data acquisition."
 url                      : https://ykobaya9.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ykobaya9/ykobaya9.github.io"
@@ -140,9 +140,11 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Yuta Kobayashi" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://scholar.google.com/citations?user=ePjRZKcAAAAJ"
+    - "https://www.linkedin.com/in/yuta-kobayashi-1206941a2"
 
 
 # Analytics

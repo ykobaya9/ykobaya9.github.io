@@ -6,12 +6,20 @@
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
 
-{% if page.title %}
+{% if page.title and page.title != site.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+{% elsif page.title %}
+  {% assign seo_title = site.title %}
 {% endif %}
 
 {% if seo_title %}
   {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+<!-- An explicit page.seo_title wins, and skips markdownify: kramdown reads a
+     "|" in a one-line title as a table delimiter and mangles it. -->
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title | strip_html | strip_newlines | escape_once %}
 {% endif %}
 
 {% if site.url %}
@@ -48,7 +56,8 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
