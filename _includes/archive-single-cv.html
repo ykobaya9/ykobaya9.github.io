@@ -38,7 +38,7 @@
     {% endif %}
     {% if post.citation %}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
     {% else %}<p class="archive__item-excerpt" itemprop="description">
-      {% if post.authors %}{{ post.authors }}<br />{% endif %}
+      {% capture author_bold %}<strong>{{ site.author.name }}</strong>{% endcapture %}{% if post.authors %}{{ post.authors | replace: site.author.name, author_bold }}<br />{% endif %}
       {% if post.venue %}<i>{{ post.venue }}</i>{% elsif post.status %}<i>{{ post.status }}</i>{% endif %}{% if post.venue or post.status %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}{% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Paper</a>{% endif %}
     </p>{% endif %}
     </li>
