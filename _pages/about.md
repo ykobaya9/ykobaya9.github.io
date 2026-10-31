@@ -10,7 +10,7 @@ redirect_from:
 
 ## About
 
-I am a doctoral student advised by [Dr. Shalmali Joshi](https://shalmalijoshi.github.io/reAIM/) at the [Department of Biomedical Informatics](https://www.dbmi.columbia.edu/) at Columbia University. 
+I am a doctoral student advised by [Dr. Shalmali Joshi](https://reaim-lab.github.io/) at the [Department of Biomedical Informatics](https://www.dbmi.columbia.edu/) at Columbia University. Previously I completed my undergraduate studies at Johns Hopkins University, where I was fortunate to be advised by Dr. Archana Venkataraman. 
 
 I am interested in developing methods to enhance AI reliability and robustness in data-scarce environments, with a focus on handling uncertainty and missing data. My current research uses principles from causality, Bayesian inference, and reinforcement learning to guide cost-efficient data acquisition under uncertainty.
 
